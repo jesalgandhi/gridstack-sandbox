@@ -1,0 +1,100 @@
+:root {
+    font-size:16px;
+    font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;  
+    padding: 0;    
+}
+
+main {
+    margin-left:5rem;
+    padding:1rem;
+}
+
+body::-webkit-scrollbar {
+    width: .75rem;
+}
+  
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: maroon;
+}
+
+.book-cover {
+    height:24.78em;
+    width:16.1em;
+    border-radius: 12px;
+}
+
+.grid-stack-item-content{    
+    display:inline-block;
+    position:relative;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-group {
+    position: absolute;
+    bottom:5px;
+    right:5px;
+}
+
+@font-face {
+    font-family: 'ABCfont';
+    src: url("fonts/ABCNormal-Bold.ttf");
+    font-style:bold;
+    font-weight:100;
+}
+
+/* .container-fluid{
+    overflow: auto;
+    padding-left: 20em;
+    } */
+
+.title {
+    font-family: ABCfont;
+    font-weight:100;
+    font-size: 100px;
+}   
+
+/* button from https://fdossena.com/?p=html5cool/buttons/i.frag */
+.button4 {
+    font-size: 12px;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    opacity:0.5;    
+}
+
+.button4:hover {
+    opacity:1;
+}
+
+@media all and (max-width:30em) {
+    .button4 {
+        display:block;
+        margin:0.2em auto;
+    }
+}
